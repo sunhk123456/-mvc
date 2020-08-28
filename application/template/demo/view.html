@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href={APP_CSS}bootstrap.css>
+    <style>
+td{
+    overflow: hidden; text-overflow:ellipsis;
+}
+
+    </style>
+</head>
+<body>
+<table class="table-bordered table table-condensed">
+    <tr><th>所属级别</th><th>标题</th><th>内容</th><th>操作</th></tr>
+    {foreach $data as $v}
+
+   <tr><td>{$v["cname"]}</td> <td>{$v["ctitle"]}</td><td>{$v["cneirong"]}</td><td><a href="/shk/2006/server/mvc/admin.php/admin/content/look1?ctitle={$v["ctitle"]}&cneirong={$v["cneirong"]}">查看</a> <a href="">编辑</a> <a
+           href="">删除</a></td></tr>
+    {/foreach}
+</table>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+
+
+    {foreach $data as $v}
+
+
+    <li>{$v['cname']}
+    <ul>
+        <li>
+            {foreach $v['child'] as $m}
+            {$m['cname']}
+        </li>
+        {/foreach}
+    </ul>
+
+    </li>
+
+
+    {/foreach}
+</ul>
+
+</body>
+
+</html>

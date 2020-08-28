@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{APP_CSS}bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+<form action="/shk/2006/server/mvc/admin.php/admin/index/login" method="post" class="yanzheng">
+   用户名： <input type="text" name="uname">
+   密码： <input type="password" name="upassword" id=""><br>
+   验证码：<input type="text" name="code" id="code"> <img src="/shk/2006/server/mvc/admin.php/admin/index/mycode" alt="" onclick="this.src='/shk/2006/server/mvc/admin.php/admin/index/mycode?'+Math.random()">
+    <input type="submit" value="登录">
+
+    <button ><a href="/shk/2006/server/mvc/admin.php/admin/index/zhuce"> 注册</a></button>
+
+</form>
+</div>
+<script src="{APP_JS}jquery.js">
+
+</script>
+<script src="{APP_JS}jquery.validate.js"></script>
+<script src="{APP_JS}admin.js"></script>
+<script>
+
+
+</script>
+</body>
+</html>
