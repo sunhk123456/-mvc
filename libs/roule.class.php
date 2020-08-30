@@ -6,7 +6,6 @@ if(!defined("MVC")){
 }
 
 //  index.php/模块/控制/动作
-
 class roule{
     private static $m;
     private static $C;
@@ -21,38 +20,38 @@ class roule{
     }
     function run(){
 
-     $this->getInfo();
-     $mpath=APP_NAME.self::$m;
+        $this->getInfo();
+        $mpath=APP_NAME.self::$m;
 
-     if (file_exists($mpath)){
+        if (file_exists($mpath)){
 
-         $curl = $mpath.DIRECTORY_SEPARATOR.self::$C.".class.php";
-         if(is_file($curl)){
+            $curl = $mpath.DIRECTORY_SEPARATOR.self::$C.".class.php";
+            if(is_file($curl)){
 
 
-             include_once $curl;
-             if(class_exists(self::$C)){
+                include_once $curl;
+                if(class_exists(self::$C)){
 
-                 $classname=self::$C;
-                 $obj=new $classname();
-               if(method_exists($obj,self::$a)){
+                    $classname=self::$C;
+                    $obj=new $classname();
+                    if(method_exists($obj,self::$a)){
 //                   echo "ok";
-                   $method=self::$a;
-    $obj->$method();
+                        $method=self::$a;
+                        $obj->$method();
 
-               }else{
-                   echo self::$a "  存在";
+                    }else{
+                        echo self::$a " 不 存在";
                }
-             }else{
-    echo self::$C"  不存在";
+                }else{
+                    echo self::$C"  不存在";
              }
 
-         }else{
-             echo "类的php不存在";
-         }
-     }else{
-         echo "mpath不存在";
-     }
+            }else{
+                echo "类的php不存在";
+            }
+        }else{
+            echo "mpath不存在";
+        }
 
 
     }
@@ -65,4 +64,3 @@ class roule{
 }
 $a=new roule();
 //$a->run();
-

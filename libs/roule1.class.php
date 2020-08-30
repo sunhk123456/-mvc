@@ -16,6 +16,7 @@ class roule1{
             "admin/index/int";
         $pathArr=(explode("/",$path));
         self::$m=empty($pathArr[0])?"admin":$pathArr[0];
+
         self::$C=empty($pathArr[1])?"index":$pathArr[1];
         self::$a=empty($pathArr[2])?"int":$pathArr[2];
     }

@@ -44,7 +44,7 @@ class reg{
             echo "两次密码不一致";
             return;
         }
-        $db=new mysqli("localhost","root","123456","uuer","3308");
+        $db=new mysqli("localhost","root","","uuer","3308");
         if(mysqli_connect_error()){
             dir("数据库连接失败");
         }

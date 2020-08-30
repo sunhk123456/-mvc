@@ -1,4 +1,5 @@
 $(function () {
+
     $("table").on('click','.add',function () {
         var cid=$(this).attr("attr");
 

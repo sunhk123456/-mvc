@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-26 04:36:14
+/* Smarty version 3.1.34-dev-7, created on 2020-08-28 07:54:11
   from 'D:\wamp64\www\shk\2006\server\mvc\application\template\demo\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f45e6be6ab3f6_48257522',
+  'unifunc' => 'content_5f48b82307d946_06654344',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0c514190e5bf58cf5cadc357b8c45c73918f157c' => 
     array (
       0 => 'D:\\wamp64\\www\\shk\\2006\\server\\mvc\\application\\template\\demo\\index.html',
-      1 => 1598411704,
+      1 => 1598587635,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f45e6be6ab3f6_48257522 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f48b82307d946_06654344 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -111,8 +111,8 @@ function content_5f45e6be6ab3f6_48257522 (Smarty_Internal_Template $_smarty_tpl)
                 </li>
         </ul>
         <li>栏目管理</li>
-        <ul class="son"><li><a href="/shk/2006/server/mvc/admin.php/admin/category/" target="main">查看所有用户</a></li>
-            <li>修改用户</li>
+        <ul class="son"><li><a href="/shk/2006/server/mvc/admin.php/admin/category/int" target="main">查看所有用户</a></li>
+            <li><a href="/shk/2006/server/mvc/admin.php/admin/category/addlist" target="main">添加用户</a></li>
         </ul>
         <li>管理员设置</li>
         <ul class="son"><li>
@@ -120,7 +120,7 @@ function content_5f45e6be6ab3f6_48257522 (Smarty_Internal_Template $_smarty_tpl)
                 添加数据</a></li>
             <li>
                 <a href="/shk/2006/server/mvc/admin.php/admin/content/look" target="main">
-                查看数据</li>
+                    查看数据</a></li>
         </ul>
     </ul></div>
     <div class="right">

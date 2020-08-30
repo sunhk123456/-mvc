@@ -27,6 +27,8 @@ define("HOST_ADD", "http://" . $_SERVER["HTTP_HOST"]);
 
 //单入口文件地址
 define("ENTRY_ADD", HOST_ADD . $_SERVER["SCRIPT_NAME"]);
+//本页面自己
+define("SELF",HOST_ADD.$_SERVER['PHP_SELF']);
 //框架入口地址
 define("MAIN_ADD", dirname(HOST_ADD . $_SERVER ["SCRIPT_NAME"]) . DIRECTORY_SEPARATOR);
 //当前应用的地址
@@ -37,6 +39,8 @@ define("APP_STA", APP_ADD . "static" . DIRECTORY_SEPARATOR);
 define("APP_JS", APP_STA . "js" . DIRECTORY_SEPARATOR);
 //css
 define("APP_CSS", APP_STA . "css" . DIRECTORY_SEPARATOR);
+//img
+define("APP_IMG", APP_STA . "img" . DIRECTORY_SEPARATOR);
 //plugins
 define("APP_PLU", MAIN_ADD . "plugins" . DIRECTORY_SEPARATOR);
 //TPL_PATH
